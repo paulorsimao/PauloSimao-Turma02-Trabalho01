@@ -1,36 +1,27 @@
-# Projeto Integrador - IA
+# JEST Unit Tests
 
-## Rodar o Projeto
+## GitHub Actions
 
-O projeto utiliza `Turbo js` para rodar o backend e frontend simultaneamente
+[![Build and Tests](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml)
 
-- Crie a `.env` dentro de cada projeto da pasta `./apps` e depois rode os comandos abaixo para rodar o projeto
+## SonarCloud
 
-```bash
-# Baixar dependencias
-npm i
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_unit-tests-jest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_unit-tests-jest)
 
-# Rodar backend e front
-npm run dev
+## Getting Started
 
-# Caso queira rodar apenas o backend
-npm run dev:back
-```
+In order to execute this project you must follow the steps below:
 
-Caso nao possua postgres instalado na máquina, é possível iniciar um container docker com o comando abaixo
-`docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres`
+1. Install [Node JS](https://nodejs.org/) (version >= 20.x)
+1. Run `npm install` to install all the project dependencies
+1. Run `npm run test` to execute the entire test suite
+1. Run `npm run coverage` to execute the entire test suite with coverage
 
-## Configurando VSCode
+All execution artifacts can be found in `./coverage`, if you want to remove these files run `npm run clean`.
 
-- Baixar a extensão `Eslint`
-- Baixar a extensão `Prettier`
-- Para formatar o código automaticamente e manter o padrão do projeto aperte `ctrl+shift+p` e pesquise por `Open User Settings`,
-  depois adicione as seguintes configurações no arquivo
-
-```json
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
-}
-```
+## Project Structure
+</br>
+<ul>
+    <li>src: source code</li>
+    <li>test: unit test files</li>
+</ul>
