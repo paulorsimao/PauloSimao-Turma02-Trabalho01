@@ -1,4 +1,5 @@
 # JEST Unit Tests
+Insipirado na Obra de [Leandro Ugioni](https://github.com/ugioni/unit-tests-jest/tree/master/src)
 
 ## GitHub Actions
 
